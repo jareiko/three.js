@@ -9744,6 +9744,8 @@ THREE.Material.prototype.setValues = function ( values ) {
 
 	for ( var key in values ) {
 
+		if ( key === 'id' ) continue;
+
 		var newValue = values[ key ];
 
 		if ( newValue === undefined ) {
